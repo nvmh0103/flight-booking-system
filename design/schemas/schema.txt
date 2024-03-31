@@ -1,0 +1,8 @@
+- User(userId, name, citizenId)
+- Bill(billId, time, status, userId, total)
+- TicketId(ticketId, billId, seatId, flightDetailsId, userId, ticketType, price)
+- Seat(flightDetailsId, seatId, status, seatNumber)
+- Flight(flightId, departureAirportId, arrivalAirportId)
+- FlightDetails(flightId, flightDetailsId, routeId, departureTime, departureGate, airplane)
+- Route(routeId, departureAirportId, arrivalAirportId, estimatedTime)
+- Airport(airportId, name, city)
