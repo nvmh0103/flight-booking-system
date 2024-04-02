@@ -1,15 +1,18 @@
+import 'dotenv/config.js';
+
 import express, { json, urlencoded } from 'express';
 import router from './controllers/v1.controller.js';
 import logger from './logger/winston.js';
 
+import dbInstance from './db/dbInstance.js';
+
+
 const app = express();
 
-app.use('/v1', router)
-app.post('/signin', (req, res) => {
-    logger.info('Sign in route called');
-    res.json({ message: 'Sign in route called' });
+await dbInstance.connect();
 
-})
+app.use('/v1', router);
+
 app.use(json())
 app.use(urlencoded({ extended: true }));
 
