@@ -119,3 +119,98 @@
 {"level":"info","message":"Connection has been established successfully.","timestamp":"2024-04-02T13:54:20.734Z"}
 {"level":"info","message":"Server is running on port 8080","timestamp":"2024-04-02T13:54:20.738Z"}
 {"level":"info","message":"Sign in route called","timestamp":"2024-04-02T13:54:22.142Z"}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:17:43.042Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:18:50.597Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:19:32.403Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-03T00:19:32.415Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:19:46.219Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-03T00:19:46.231Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:19:51.254Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:19:53.328Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:03.975Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:03.983Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:03.987Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:21.187Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:21.195Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:21.201Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:28.165Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:28.174Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:28.179Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:35.635Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-03T00:20:35.640Z'
+}

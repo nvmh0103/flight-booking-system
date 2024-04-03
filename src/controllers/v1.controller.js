@@ -28,15 +28,3 @@ router.post('/signin', async (req, res) => {
 });
 
 export default router;
-
-
-
-
-// // Dummy JSON for user
-// const user = {
-//     "name": "John Doe",
-//     "email": "johndoe@example.com",
-//     "password": "password123",
-//     "phoneNumber": "1234567890",
-//     "citizenIdNumber": "1234567890"
-// };
