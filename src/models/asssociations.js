@@ -13,18 +13,24 @@ Booking.belongsTo(User, { foreignKey: "user_id" });
 
 Airport.hasMany(Route, { foreignKey: "departure_airport_id" });
 Airport.hasMany(Route, { foreignKey: "arrival_airport_id" });
-Route.belongsTo(Airport, { foreignKey: "departure_airport_id" });
-Route.belongsTo(Airport, { foreignKey: "arrival_airport_id" });
+Route.belongsTo(Airport, {
+  foreignKey: "departure_airport_id",
+  as: "DepartureAirport",
+});
+Route.belongsTo(Airport, {
+  foreignKey: "arrival_airport_id",
+  as: "ArrivalAirport",
+});
 
 Airport.hasMany(Path, { foreignKey: "departure_airport_id" });
 Airport.hasMany(Path, { foreignKey: "arrival_airport_id" });
 Path.belongsTo(Airport, {
   foreignKey: "departure_airport_id",
-  as: "DepartureAirport",
+  as: "Departure",
 });
 Path.belongsTo(Airport, {
   foreignKey: "arrival_airport_id",
-  as: "ArrivalAirport",
+  as: "Destination",
 });
 
 Path.hasMany(ConnectingFlight, { foreignKey: "path_id" });

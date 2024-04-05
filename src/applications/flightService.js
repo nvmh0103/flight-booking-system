@@ -1,4 +1,10 @@
-import { ConnectingFlight, Flight, Airport, Path } from "../models/index.js";
+import {
+  ConnectingFlight,
+  Flight,
+  Airport,
+  Path,
+  Route,
+} from "../models/index.js";
 import { Op } from "sequelize";
 
 class FlightService {
@@ -10,6 +16,12 @@ class FlightService {
     const { departureAirport, arrivalAirport, date, numberOfSeat } = conditions;
     // querying
     const flights = await Flight.findAll({
+      attributes: [
+        "departureTime",
+        "airplaneNumber",
+        "gateNumber",
+        "connectingIndex",
+      ],
       // where: {
       //   departureTime: {
       //     [Op.gt]: date,
@@ -18,27 +30,48 @@ class FlightService {
       include: [
         {
           model: ConnectingFlight,
+          attributes: ["id"],
           required: true,
           include: [
             {
               model: Path,
+              attributes: ["id"],
               required: true,
               include: [
                 {
                   model: Airport,
-                  as: "DepartureAirport",
+                  attributes: ["name", "city", "country"],
+                  as: "Departure",
                   where: {
                     name: departureAirport,
                   },
                 },
                 {
                   model: Airport,
-                  as: "ArrivalAirport",
+                  attributes: ["name", "city", "country"],
+                  as: "Destination",
                   where: {
                     name: arrivalAirport,
                   },
                 },
               ],
+            },
+          ],
+        },
+        {
+          model: Route,
+          attributes: ["id", "distance", "estimatedTimeOfArrival"],
+          required: true,
+          include: [
+            {
+              model: Airport,
+              attributes: ["name", "city", "country"],
+              as: "DepartureAirport",
+            },
+            {
+              model: Airport,
+              attributes: ["name", "city", "country"],
+              as: "ArrivalAirport",
             },
           ],
         },
