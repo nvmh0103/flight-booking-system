@@ -18,8 +18,14 @@ Route.belongsTo(Airport, { foreignKey: "arrival_airport_id" });
 
 Airport.hasMany(Path, { foreignKey: "departure_airport_id" });
 Airport.hasMany(Path, { foreignKey: "arrival_airport_id" });
-Path.belongsTo(Airport, { foreignKey: "departure_airport_id" });
-Path.belongsTo(Airport, { foreignKey: "arrival_airport_id" });
+Path.belongsTo(Airport, {
+  foreignKey: "departure_airport_id",
+  as: "DepartureAirport",
+});
+Path.belongsTo(Airport, {
+  foreignKey: "arrival_airport_id",
+  as: "ArrivalAirport",
+});
 
 Path.hasMany(ConnectingFlight, { foreignKey: "path_id" });
 ConnectingFlight.belongsTo(Path, { foreignKey: "path_id" });

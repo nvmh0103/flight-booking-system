@@ -32,11 +32,12 @@ const Route = sequelize.define(
     createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
+      field: "created_at",
     },
   },
   {
     tableName: "routes",
-    timestamps: true, // If you don't want Sequelize to manage createdAt and updatedAt fields
+    timestamps: false, // If you don't want Sequelize to manage createdAt and updatedAt fields
   },
 );
 

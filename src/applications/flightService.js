@@ -1,4 +1,4 @@
-import { ConnectingFlight, Flight } from "../models/index.js";
+import { ConnectingFlight, Flight, Airport, Path } from "../models/index.js";
 import { Op } from "sequelize";
 
 class FlightService {
@@ -10,18 +10,39 @@ class FlightService {
     const { departureAirport, arrivalAirport, date, numberOfSeat } = conditions;
     // querying
     const flights = await Flight.findAll({
-      where: {
-        departure_time: {
-          [Op.gt]: new Date(date),
+      // where: {
+      //   departureTime: {
+      //     [Op.gt]: date,
+      //   },
+      // },
+      include: [
+        {
+          model: ConnectingFlight,
+          required: true,
+          include: [
+            {
+              model: Path,
+              required: true,
+              include: [
+                {
+                  model: Airport,
+                  as: "DepartureAirport",
+                  where: {
+                    name: departureAirport,
+                  },
+                },
+                {
+                  model: Airport,
+                  as: "ArrivalAirport",
+                  where: {
+                    name: arrivalAirport,
+                  },
+                },
+              ],
+            },
+          ],
         },
-      },
-      include: {
-        model: ConnectingFlight,
-        where: {
-          departureAirport,
-          arrivalAirport,
-        },
-      },
+      ],
     });
 
     return flights;

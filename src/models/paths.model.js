@@ -20,14 +20,15 @@ const Path = sequelize.define(
       allowNull: false,
       field: "arrival_airport_id",
     },
-    created_at: {
+    createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
+      field: "created_at",
     },
   },
   {
     tableName: "paths",
-    timestamps: true, // If you want to include timestamps, set it to true
+    timestamps: false, // If you want to include timestamps, set it to true
   },
 );
 

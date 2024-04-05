@@ -15,14 +15,15 @@ const ConnectingFlight = sequelize.define(
       allowNull: false,
       field: "path_id",
     },
-    created_at: {
+    createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
+      field: "created_at",
     },
   },
   {
     tableName: "connecting_flights",
-    timestamps: true, // If you want to include timestamps, set it to true
+    timestamps: false, // If you want to include timestamps, set it to true
   },
 );
 

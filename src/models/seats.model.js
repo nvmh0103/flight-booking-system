@@ -24,14 +24,15 @@ const Seat = sequelize.define(
       type: DataTypes.STRING(10),
       allowNull: false,
     },
-    created_at: {
+    createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
+      field: "created_at",
     },
   },
   {
     tableName: "seats",
-    timestamps: true, // If you want to include timestamps, set it to true
+    timestamps: false, // If you want to include timestamps, set it to true
   },
 );
 

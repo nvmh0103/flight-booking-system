@@ -33,9 +33,10 @@ const User = sequelize.define(
       allowNull: true,
       field: "citizen_id_number",
     },
-    created_at: {
+    createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
+      field: "created_at",
     },
   },
   {

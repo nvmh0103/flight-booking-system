@@ -23,14 +23,15 @@ const Airport = sequelize.define(
       type: DataTypes.STRING(50),
       allowNull: false,
     },
-    created_at: {
+    createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
+      field: "created_at",
     },
   },
   {
     tableName: "airports",
-    timestamps: true, // If you want to include timestamps, set it to true
+    timestamps: false, // If you want to include timestamps, set it to true
   },
 );
 

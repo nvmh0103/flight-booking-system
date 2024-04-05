@@ -25,9 +25,10 @@ const Ticket = sequelize.define(
       allowNull: false,
       field: "seat_id",
     },
-    created_at: {
+    createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
+      field: "created_at",
     },
     ticketType: {
       type: DataTypes.STRING(20),
@@ -46,7 +47,7 @@ const Ticket = sequelize.define(
   },
   {
     tableName: "tickets",
-    timestamps: true,
+    timestamps: false,
   },
 );
 

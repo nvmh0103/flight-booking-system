@@ -24,14 +24,15 @@ const Booking = sequelize.define(
       allowNull: false,
       field: "total_price",
     },
-    created_at: {
+    createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
+      field: "created_at",
     },
   },
   {
     tableName: "bookings",
-    timestamps: true, // If you want to include timestamps, set it to true
+    timestamps: false, // If you want to include timestamps, set it to true
   },
 );
 
