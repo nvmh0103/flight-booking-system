@@ -1471,3 +1471,148 @@
   level: 'info',
   timestamp: '2024-04-05T12:28:04.107Z'
 }
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:31:42.232Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:31:42.237Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:34:22.194Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:34:22.200Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:37:35.252Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:37:35.258Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:38:10.413Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:38:10.420Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:38:43.062Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:38:43.068Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:39:38.284Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:39:38.290Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:41:36.888Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:41:36.894Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:42:28.313Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:42:28.318Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:43:03.299Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:43:03.305Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:49:19.845Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:49:19.851Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:49:51.789Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:49:51.796Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:50:06.749Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:50:06.756Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:51:09.374Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:51:09.380Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:54:58.147Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:54:58.153Z'
+}
+{
+  message: 'Get flights route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:55:00.075Z'
+}

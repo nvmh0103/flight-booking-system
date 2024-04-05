@@ -20,6 +20,15 @@ const Seat = sequelize.define(
       allowNull: false,
       field: "seat_number",
     },
+    seatType: {
+      type: DataTypes.STRING(20),
+      allowNull: false,
+      field: "seat_type",
+    },
+    price: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+    },
     status: {
       type: DataTypes.STRING(10),
       allowNull: false,

@@ -30,19 +30,10 @@ const Ticket = sequelize.define(
       defaultValue: DataTypes.NOW,
       field: "created_at",
     },
-    ticketType: {
-      type: DataTypes.STRING(20),
-      allowNull: false,
-      field: "ticket_type",
-    },
     bookingId: {
       type: DataTypes.UUID,
       allowNull: false,
       field: "booking_id",
-    },
-    price: {
-      type: DataTypes.DECIMAL(10, 2),
-      allowNull: false,
     },
   },
   {

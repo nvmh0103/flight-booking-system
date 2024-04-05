@@ -25,7 +25,7 @@ VALUES
   ((SELECT id FROM connecting_flights WHERE path_id = (SELECT id FROM paths WHERE departure_airport_id = (SELECT id FROM airports WHERE name = 'JFK Airport') AND arrival_airport_id = (SELECT id FROM airports WHERE name = 'LAX Airport'))), 1, (SELECT id FROM routes WHERE departure_airport_id = (SELECT id FROM airports WHERE name = 'JFK Airport') AND arrival_airport_id = (SELECT id FROM airports WHERE name = 'LAX Airport')), 'A1', 2, '2022-12-31 12:00:00', 'ABC123');
 
 -- Insert seed data for seats table
-INSERT INTO seats (flight_id, seat_number, status)
+INSERT INTO seats (flight_id, seat_number, seat_type, price, status)
 VALUES 
-  ((SELECT id FROM flights WHERE connecting_flight_id = (SELECT id FROM connecting_flights WHERE path_id = (SELECT id FROM paths WHERE departure_airport_id = (SELECT id FROM airports WHERE name = 'JFK Airport') AND arrival_airport_id = (SELECT id FROM airports WHERE name = 'LAX Airport')))), 'A1', 'available'),
-  ((SELECT id FROM flights WHERE connecting_flight_id = (SELECT id FROM connecting_flights WHERE path_id = (SELECT id FROM paths WHERE departure_airport_id = (SELECT id FROM airports WHERE name = 'JFK Airport') AND arrival_airport_id = (SELECT id FROM airports WHERE name = 'LAX Airport')))), 'A2', 'available');
+  ((SELECT id FROM flights WHERE connecting_flight_id = (SELECT id FROM connecting_flights WHERE path_id = (SELECT id FROM paths WHERE departure_airport_id = (SELECT id FROM airports WHERE name = 'JFK Airport') AND arrival_airport_id = (SELECT id FROM airports WHERE name = 'LAX Airport')))), 'A1', 'economy', '100', 'available'),
+  ((SELECT id FROM flights WHERE connecting_flight_id = (SELECT id FROM connecting_flights WHERE path_id = (SELECT id FROM paths WHERE departure_airport_id = (SELECT id FROM airports WHERE name = 'JFK Airport') AND arrival_airport_id = (SELECT id FROM airports WHERE name = 'LAX Airport')))), 'A2', 'business','200','available');

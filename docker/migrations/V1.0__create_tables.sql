@@ -62,6 +62,8 @@ CREATE TABLE flights (
 CREATE TABLE seats (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     flight_id UUID NOT NULL,
+    seat_type VARCHAR(20) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
     seat_number VARCHAR(10) NOT NULL,
     status VARCHAR(10) NOT NULL,
     created_at timestamp DEFAULT CURRENT_TIMESTAMP,
@@ -83,9 +85,7 @@ CREATE TABLE tickets (
     flight_id UUID NOT NULL,
     seat_id UUID NOT NULL,
     created_at timestamp DEFAULT CURRENT_TIMESTAMP,
-    ticket_type VARCHAR(20) NOT NULL,
     booking_id UUID NOT NULL,
-    price DECIMAL(10, 2) NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users (id),
     FOREIGN KEY (flight_id) REFERENCES flights (id),
     FOREIGN KEY (seat_id) REFERENCES seats (id),

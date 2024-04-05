@@ -73,7 +73,7 @@ class FlightService {
         },
         {
           model: Seat,
-          attributes: ["id", "seatNumber"],
+          attributes: ["id", "seatNumber", "seatType", "price"],
           required: true,
           where: sequelize.where(
             sequelize.literal(
