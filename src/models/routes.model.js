@@ -13,10 +13,12 @@ const Route = sequelize.define(
     departureAirportId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "departure_airport_id",
     },
     arrivalAirportId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "arrival_airport_id",
     },
     distance: {
       type: DataTypes.DECIMAL(10, 2),
@@ -25,6 +27,7 @@ const Route = sequelize.define(
     estimatedTimeOfArrival: {
       type: DataTypes.DATE,
       allowNull: false,
+      field: "estimated_time_of_arrival",
     },
     createdAt: {
       type: DataTypes.DATE,

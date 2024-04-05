@@ -1,6 +1,7 @@
 import { Router } from "express";
 import logger from "../logger/winston.js";
 import UserService from "../applications/userService.js";
+import flightService from "../applications/flightService.js";
 
 const router = Router();
 
@@ -21,6 +22,17 @@ router.post("/signin", async (req, res) => {
     logger.info("Sign in route called");
     await UserService.signIn(req.body.email, req.body.password);
     res.status(200).send("User signed in");
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+// get list of flights
+router.get("/flights", async (req, res) => {
+  try {
+    logger.info("Get flights route called");
+    const flight = await flightService.getFlights(req.body);
+    res.status(200).send({ flight });
   } catch (error) {
     res.status(400).send(error.message);
   }

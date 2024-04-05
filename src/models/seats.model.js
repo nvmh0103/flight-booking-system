@@ -10,13 +10,15 @@ const Seat = sequelize.define(
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
     },
-    flight_id: {
+    flightId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "flight_id",
     },
-    seat_number: {
+    seatNumber: {
       type: DataTypes.STRING(10),
       allowNull: false,
+      field: "seat_number",
     },
     status: {
       type: DataTypes.STRING(10),

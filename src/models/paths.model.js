@@ -10,13 +10,15 @@ const Path = sequelize.define(
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
     },
-    departure_airport_id: {
+    departureAirportId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "departure_airport_id",
     },
-    arrival_airport_id: {
+    arrivalAirportId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "arrival_airport_id",
     },
     created_at: {
       type: DataTypes.DATE,

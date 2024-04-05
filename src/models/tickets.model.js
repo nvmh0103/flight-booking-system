@@ -10,29 +10,34 @@ const Ticket = sequelize.define(
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
     },
-    user_id: {
+    userId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "user_id",
     },
-    flight_id: {
+    flightId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "flight_id",
     },
-    seat_id: {
+    seatId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "seat_id",
     },
     created_at: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
     },
-    ticket_type: {
+    ticketType: {
       type: DataTypes.STRING(20),
       allowNull: false,
+      field: "ticket_type",
     },
-    booking_id: {
+    bookingId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "booking_id",
     },
     price: {
       type: DataTypes.DECIMAL(10, 2),

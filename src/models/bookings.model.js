@@ -10,17 +10,19 @@ const Booking = sequelize.define(
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
     },
-    user_id: {
+    userId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "user_id",
     },
     status: {
       type: DataTypes.STRING(10),
       allowNull: false,
     },
-    total_price: {
+    totalPrice: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
+      field: "total_price",
     },
     created_at: {
       type: DataTypes.DATE,

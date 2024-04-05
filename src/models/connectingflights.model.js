@@ -10,9 +10,10 @@ const ConnectingFlight = sequelize.define(
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
     },
-    path_id: {
+    pathId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "path_id",
     },
     created_at: {
       type: DataTypes.DATE,

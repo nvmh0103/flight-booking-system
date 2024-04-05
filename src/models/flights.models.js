@@ -10,33 +10,40 @@ const Flight = sequelize.define(
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
     },
-    connecting_flight_id: {
+    connectingFlightId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "connecting_flight_id",
     },
-    connecting_index: {
+    connectingIndex: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      field: "connecting_index",
     },
-    route_id: {
+    routeId: {
       type: DataTypes.UUID,
       allowNull: false,
+      field: "route_id",
     },
-    gate_number: {
+    gateNumber: {
       type: DataTypes.STRING(10),
       allowNull: false,
+      field: "gate_number",
     },
-    baggage_allowance: {
+    baggageAllowance: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      field: "baggage_allowance",
     },
-    departure_time: {
+    departureTime: {
       type: DataTypes.DATE,
       allowNull: false,
+      field: "departure_time",
     },
-    airplane_number: {
+    airplaneNumber: {
       type: DataTypes.STRING(50),
       allowNull: false,
+      field: "airplane_number",
     },
     created_at: {
       type: DataTypes.DATE,
