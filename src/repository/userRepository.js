@@ -11,6 +11,7 @@ class UserRepository {
     citizenIdNumber,
   }) {
     try {
+      logger.info({ username, email, phoneNumber, citizenIdNumber });
       const hashedPassword = await bcrypt.hash(password, 10);
       const user = await User.create({
         username,

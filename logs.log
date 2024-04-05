@@ -799,3 +799,429 @@
   level: 'info',
   timestamp: '2024-04-05T04:57:58.104Z'
 }
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T09:25:20.157Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T09:25:20.162Z'
+}
+{
+  name: 'SequelizeConnectionRefusedError',
+  parent: AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1667:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [
+      Error: connect ECONNREFUSED ::1:5432
+          at createConnectionError (node:net:1634:14)
+          at afterConnectMultiple (node:net:1664:40) {
+        errno: -4078,
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '::1',
+        port: 5432
+      },
+      Error: connect ECONNREFUSED 127.0.0.1:5432
+          at createConnectionError (node:net:1634:14)
+          at afterConnectMultiple (node:net:1664:40) {
+        errno: -4078,
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 5432
+      }
+    ]
+  },
+  original: AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1667:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [
+      Error: connect ECONNREFUSED ::1:5432
+          at createConnectionError (node:net:1634:14)
+          at afterConnectMultiple (node:net:1664:40) {
+        errno: -4078,
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '::1',
+        port: 5432
+      },
+      Error: connect ECONNREFUSED 127.0.0.1:5432
+          at createConnectionError (node:net:1634:14)
+          at afterConnectMultiple (node:net:1664:40) {
+        errno: -4078,
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 5432
+      }
+    ]
+  },
+  level: 'error',
+  message: 'Unable to connect to the database:',
+  stack: 'SequelizeConnectionRefusedError\n' +
+    '    at Client._connectionCallback (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\dialects\\postgres\\connection-manager.js:133:24)\n' +
+    '    at Client._handleErrorWhileConnecting (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\pg\\lib\\client.js:327:19)\n' +
+    '    at Client._handleErrorEvent (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\pg\\lib\\client.js:337:19)\n' +
+    '    at Connection.emit (node:events:514:28)\n' +
+    '    at Socket.reportStreamError (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\pg\\lib\\connection.js:58:12)\n' +
+    '    at Socket.emit (node:events:514:28)\n' +
+    '    at emitErrorNT (node:internal/streams/destroy:151:8)\n' +
+    '    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+  timestamp: '2024-04-05T11:47:46.975Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:47:46.985Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T11:48:52.434Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:48:52.441Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T11:48:54.627Z'
+}
+{
+  name: 'SequelizeValidationError',
+  errors: [
+    ValidationErrorItem {
+      message: 'User.username cannot be null',
+      type: 'notNull Violation',
+      path: 'username',
+      value: null,
+      origin: 'CORE',
+      instance: User {
+        dataValues: {
+          id: '8d37950d-5ce3-434c-8604-1906ab0de40e',
+          createdAt: 2024-04-05T11:48:54.685Z,
+          username: undefined,
+          email: 'hoang1@gmail.com',
+          password: '$2b$10$QbYgLcJbNIICOT/k96gkCeNV78CIj0GqpgXvBzW3qBKA03Q4xIcu.',
+          phoneNumber: '12345678',
+          citizenIdNumber: '12938293329'
+        },
+        _previousDataValues: {
+          email: undefined,
+          password: undefined,
+          phoneNumber: undefined,
+          citizenIdNumber: undefined
+        },
+        uniqno: 1,
+        _changed: Set(4) {
+          'email',
+          'password',
+          'phoneNumber',
+          'citizenIdNumber'
+        },
+        _options: {
+          isNewRecord: true,
+          _schema: null,
+          _schemaDelimiter: '',
+          attributes: undefined,
+          include: undefined,
+          raw: undefined,
+          silent: undefined
+        },
+        isNewRecord: true
+      },
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  level: 'error',
+  message: 'Failed to create user: notNull Violation: User.username cannot be null',
+  stack: 'SequelizeValidationError: notNull Violation: User.username cannot be null\n' +
+    '    at InstanceValidator._validate (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\instance-validator.js:50:13)\n' +
+    '    at async InstanceValidator._validateAndRunHooks (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\instance-validator.js:60:7)\n' +
+    '    at async InstanceValidator.validate (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\instance-validator.js:54:12)\n' +
+    '    at async model.save (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\model.js:2426:7)\n' +
+    '    at async User.create (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\model.js:1362:12)\n' +
+    '    at async UserRepository.createUser (file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/repository/userRepository.js:15:20)\n' +
+    '    at async UserService.register (file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/applications/userService.js:6:5)\n' +
+    '    at async file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/controllers/v1.controller.js:12:5',
+  timestamp: '2024-04-05T11:48:54.686Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T11:49:24.582Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:49:24.588Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T11:49:26.858Z'
+}
+{
+  message: {
+    username: undefined,
+    email: 'hoang1@gmail.com',
+    phoneNumber: '12345678',
+    citizenIdNumber: '12938293329'
+  },
+  level: 'info',
+  timestamp: '2024-04-05T11:49:26.859Z'
+}
+{
+  name: 'SequelizeValidationError',
+  errors: [
+    ValidationErrorItem {
+      message: 'User.username cannot be null',
+      type: 'notNull Violation',
+      path: 'username',
+      value: null,
+      origin: 'CORE',
+      instance: User {
+        dataValues: {
+          id: '56fd462c-ff24-473f-a816-5178c54c5b7f',
+          createdAt: 2024-04-05T11:49:26.925Z,
+          username: undefined,
+          email: 'hoang1@gmail.com',
+          password: '$2b$10$C2VC5xT.2ly41ediJoKmceVg4tBYJf4X/DUnFvJZ6/j9SI2KWPgbC',
+          phoneNumber: '12345678',
+          citizenIdNumber: '12938293329'
+        },
+        _previousDataValues: {
+          email: undefined,
+          password: undefined,
+          phoneNumber: undefined,
+          citizenIdNumber: undefined
+        },
+        uniqno: 1,
+        _changed: Set(4) {
+          'email',
+          'password',
+          'phoneNumber',
+          'citizenIdNumber'
+        },
+        _options: {
+          isNewRecord: true,
+          _schema: null,
+          _schemaDelimiter: '',
+          attributes: undefined,
+          include: undefined,
+          raw: undefined,
+          silent: undefined
+        },
+        isNewRecord: true
+      },
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  level: 'error',
+  message: 'Failed to create user: notNull Violation: User.username cannot be null',
+  stack: 'SequelizeValidationError: notNull Violation: User.username cannot be null\n' +
+    '    at InstanceValidator._validate (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\instance-validator.js:50:13)\n' +
+    '    at async InstanceValidator._validateAndRunHooks (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\instance-validator.js:60:7)\n' +
+    '    at async InstanceValidator.validate (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\instance-validator.js:54:12)\n' +
+    '    at async model.save (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\model.js:2426:7)\n' +
+    '    at async User.create (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\model.js:1362:12)\n' +
+    '    at async UserRepository.createUser (file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/repository/userRepository.js:16:20)\n' +
+    '    at async UserService.register (file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/applications/userService.js:6:5)\n' +
+    '    at async file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/controllers/v1.controller.js:12:5',
+  timestamp: '2024-04-05T11:49:26.926Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T11:49:43.097Z'
+}
+{
+  message: {
+    username: 'hoang',
+    email: 'hoang1@gmail.com',
+    phoneNumber: '12345678',
+    citizenIdNumber: '12938293329'
+  },
+  level: 'info',
+  timestamp: '2024-04-05T11:49:43.098Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T11:51:09.415Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T11:51:24.960Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:51:24.966Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T11:51:27.108Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T11:51:55.298Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:51:55.304Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T11:51:56.949Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T11:55:25.829Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:55:25.834Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T11:56:00.529Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:56:00.535Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T11:57:26.052Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:57:26.059Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T11:57:27.343Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T11:58:43.087Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T11:58:43.093Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:03:21.492Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:03:21.498Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:03:28.765Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:04:03.251Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:04:03.256Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:04:17.412Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:04:17.418Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:04:57.801Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:04:57.808Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:05:25.668Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:05:25.675Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:05:51.295Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:05:51.301Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:06:11.892Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:06:11.898Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712318608,
+  exp: 1712319508,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-05T12:06:14.666Z'
+}
+{
+  message: 'Get user route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:06:14.675Z'
+}

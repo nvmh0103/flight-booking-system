@@ -9,11 +9,11 @@ class UserService {
   async signIn(email, password) {
     const user = await userRepository.findUser(email);
     if (!user) {
-      throw new Error("User not found");
+      throw new Error("Invalid credentials");
     }
     const isValidPassword = await bcrypt.compare(password, user.password);
     if (!isValidPassword) {
-      throw new Error("Invalid password");
+      throw new Error("Invalid credentials");
     }
     return user;
   }
