@@ -10,299 +10,84 @@ CREATE TABLE users (
     created_at timestamp DEFAULT CURRENT_TIMESTAMP
 );
 
-// FILEPATH: /C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/docker/migrations/V1.0__create_tables.sql
+CREATE TABLE airports (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    country VARCHAR(50) NOT NULL,
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP
+);
 
-const { DataTypes } = require('sequelize');
-const sequelize = require('your-sequelize-instance'); // Replace with your Sequelize instance
+CREATE TABLE routes (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    departure_airport_id UUID NOT NULL,
+    arrival_airport_id UUID NOT NULL,
+    distance DECIMAL(10, 2) NOT NULL,
+    estimated_time_of_arrival timestamp NOT NULL,
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (departure_airport_id) REFERENCES airports (id),
+    FOREIGN KEY (arrival_airport_id) REFERENCES airports (id)
+);
 
-const User = sequelize.define('User', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    username: {
-        type: DataTypes.STRING(50),
-        allowNull: false,
-    },
-    password: {
-        type: DataTypes.STRING(100),
-        allowNull: false,
-    },
-    email: {
-        type: DataTypes.STRING(100),
-        allowNull: false,
-        unique: true,
-    },
-    phone_number: {
-        type: DataTypes.STRING(20),
-        allowNull: false,
-    },
-    citizen_id_number: {
-        type: DataTypes.STRING(20),
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-});
+CREATE TABLE paths (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    departure_airport_id UUID NOT NULL,
+    arrival_airport_id UUID NOT NULL,
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (departure_airport_id) REFERENCES airports (id),
+    FOREIGN KEY (arrival_airport_id) REFERENCES airports (id)
+);
 
-const Airport = sequelize.define('Airport', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    name: {
-        type: DataTypes.STRING(50),
-        allowNull: false,
-    },
-    city: {
-        type: DataTypes.STRING(50),
-        allowNull: false,
-    },
-    country: {
-        type: DataTypes.STRING(50),
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-});
+CREATE TABLE connecting_flights (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    path_id UUID NOT NULL,
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (path_id) REFERENCES paths (id)
+);
 
-const Route = sequelize.define('Route', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    departure_airport_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    arrival_airport_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    distance: {
-        type: DataTypes.DECIMAL(10, 2),
-        allowNull: false,
-    },
-    estimated_time_of_arrival: {
-        type: DataTypes.DATE,
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-});
+CREATE TABLE flights (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    connecting_flight_id UUID NOT NULL,
+    connecting_index INTEGER NOT NULL,
+    route_id UUID NOT NULL,
+    gate_number VARCHAR(10) NOT NULL,
+    baggage_allowance INTEGER NOT NULL,
+    departure_time timestamp NOT NULL,
+    airplane_number VARCHAR(50) NOT NULL,
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (connecting_flight_id) REFERENCES connecting_flights (id),
+    FOREIGN KEY (route_id) REFERENCES routes (id)
+);
 
-const Path = sequelize.define('Path', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    departure_airport_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    arrival_airport_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-});
+CREATE TABLE seats (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    flight_id UUID NOT NULL,
+    seat_number VARCHAR(10) NOT NULL,
+    status VARCHAR(10) NOT NULL,
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (flight_id) REFERENCES flights (id)
+);
 
-const ConnectingFlight = sequelize.define('ConnectingFlight', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    path_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-});
+CREATE TABLE bookings (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    user_id UUID NOT NULL,
+    status VARCHAR(10) NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL,
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users (id)
+);
 
-const Flight = sequelize.define('Flight', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    connecting_flight_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    connecting_index: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    },
-    route_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    gate_number: {
-        type: DataTypes.STRING(10),
-        allowNull: false,
-    },
-    baggage_allowance: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    },
-    departure_time: {
-        type: DataTypes.DATE,
-        allowNull: false,
-    },
-    airplane_number: {
-        type: DataTypes.STRING(50),
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-});
-
-const Seat = sequelize.define('Seat', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    flight_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    seat_number: {
-        type: DataTypes.STRING(10),
-        allowNull: false,
-    },
-    status: {
-        type: DataTypes.STRING(10),
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-});
-
-const Booking = sequelize.define('Booking', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    user_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    status: {
-        type: DataTypes.STRING(10),
-        allowNull: false,
-    },
-    total_price: {
-        type: DataTypes.DECIMAL(10, 2),
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-});
-
-const Ticket = sequelize.define('Ticket', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-    },
-    user_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    flight_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    seat_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-    ticket_type: {
-        type: DataTypes.STRING(20),
-        allowNull: false,
-    },
-    booking_id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-    },
-    price: {
-        type: DataTypes.DECIMAL(10, 2),
-        allowNull: false,
-    },
-});
-
-// Define associations
-User.hasMany(Booking, { foreignKey: 'user_id' });
-Booking.belongsTo(User, { foreignKey: 'user_id' });
-
-Airport.hasMany(Route, { foreignKey: 'departure_airport_id' });
-Airport.hasMany(Route, { foreignKey: 'arrival_airport_id' });
-Route.belongsTo(Airport, { foreignKey: 'departure_airport_id' });
-Route.belongsTo(Airport, { foreignKey: 'arrival_airport_id' });
-
-Airport.hasMany(Path, { foreignKey: 'departure_airport_id' });
-Airport.hasMany(Path, { foreignKey: 'arrival_airport_id' });
-Path.belongsTo(Airport, { foreignKey: 'departure_airport_id' });
-Path.belongsTo(Airport, { foreignKey: 'arrival_airport_id' });
-
-Path.hasMany(ConnectingFlight, { foreignKey: 'path_id' });
-ConnectingFlight.belongsTo(Path, { foreignKey: 'path_id' });
-
-ConnectingFlight.hasMany(Flight, { foreignKey: 'connecting_flight_id' });
-Flight.belongsTo(ConnectingFlight, { foreignKey: 'connecting_flight_id' });
-
-Route.hasMany(Flight, { foreignKey: 'route_id' });
-Flight.belongsTo(Route, { foreignKey: 'route_id' });
-
-Flight.hasMany(Seat, { foreignKey: 'flight_id' });
-Seat.belongsTo(Flight, { foreignKey: 'flight_id' });
-
-Booking.hasMany(Ticket, { foreignKey: 'booking_id' });
-Ticket.belongsTo(Booking, { foreignKey: 'booking_id' });
-
-Flight.hasMany(Ticket, { foreignKey: 'flight_id' });
-Ticket.belongsTo(Flight, { foreignKey: 'flight_id' });
-
-Seat.hasMany(Ticket, { foreignKey: 'seat_id' });
-Ticket.belongsTo(Seat, { foreignKey: 'seat_id' });
-
-module.exports = {
-    User,
-    Airport,
-    Route,
-    Path,
-    ConnectingFlight,
-    Flight,
-    Seat,
-    Booking,
-    Ticket,
-};
+CREATE TABLE tickets (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+    user_id UUID NOT NULL,
+    flight_id UUID NOT NULL,
+    seat_id UUID NOT NULL,
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP,
+    ticket_type VARCHAR(20) NOT NULL,
+    booking_id UUID NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users (id),
+    FOREIGN KEY (flight_id) REFERENCES flights (id),
+    FOREIGN KEY (seat_id) REFERENCES seats (id),
+    FOREIGN KEY (booking_id) REFERENCES bookings (id)
+);
