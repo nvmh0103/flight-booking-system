@@ -74,6 +74,7 @@ CREATE TABLE bookings (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     user_id UUID NOT NULL,
     status VARCHAR(10) NOT NULL,
+    payment_id VARCHAR(50) NOT NULL,
     total_price DECIMAL(10, 2) NOT NULL,
     created_at timestamp DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users (id)

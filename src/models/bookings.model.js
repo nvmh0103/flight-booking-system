@@ -24,6 +24,11 @@ const Booking = sequelize.define(
       allowNull: false,
       field: "total_price",
     },
+    paymentId: {
+      type: DataTypes.STRING(50),
+      allowNull: false,
+      field: "payment_id",
+    },
     createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
