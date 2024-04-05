@@ -4,17 +4,18 @@ import {
   Airport,
   Path,
   Route,
+  Seat,
 } from "../models/index.js";
 import { Op } from "sequelize";
+import dbInstance from "../db/dbInstance.js";
 
+const sequelize = dbInstance.getConnection();
 class FlightService {
   constructor() {}
 
-  // Add any additional methods or properties here
   async getFlights(conditions) {
     // Implement the method here
     const { departureAirport, arrivalAirport, date, numberOfSeat } = conditions;
-    // querying
     const flights = await Flight.findAll({
       attributes: [
         "departureTime",
@@ -22,11 +23,6 @@ class FlightService {
         "gateNumber",
         "connectingIndex",
       ],
-      // where: {
-      //   departureTime: {
-      //     [Op.gt]: date,
-      //   },
-      // },
       include: [
         {
           model: ConnectingFlight,
@@ -75,7 +71,24 @@ class FlightService {
             },
           ],
         },
+        {
+          model: Seat,
+          attributes: ["id", "seatNumber"],
+          required: true,
+          where: sequelize.where(
+            sequelize.literal(
+              `( SELECT COUNT(*) FROM "seats" WHERE "seats"."status" = 'available')`,
+            ),
+            Op.gte,
+            numberOfSeat,
+          ),
+        },
       ],
+      where: {
+        departureTime: {
+          [Op.gte]: date,
+        },
+      },
     });
 
     return flights;
