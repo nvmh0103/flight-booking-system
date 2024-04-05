@@ -22,9 +22,9 @@ class Redis {
     return await client.get(key);
   }
 
-  async set(key, value) {
+  async set(key, value, expiresTime = 900) {
     const client = await this.getConnection();
-    await client.set(key, value);
+    await client.set(key, value, "EX", expiresTime);
   }
 
   async del(key) {

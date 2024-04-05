@@ -5,6 +5,7 @@ import JWTService from "../common/jwtUtils.js";
 import flightService from "../applications/flightService.js";
 import authenticationMiddleware from "../middlewares/authentication.js";
 import cookie from "cookie";
+import redis from "../db/redis.js";
 
 const router = Router();
 
@@ -35,6 +36,8 @@ router.post("/signin", async (req, res) => {
         maxAge: 3600,
       }),
     );
+    // Save token into redis
+    await redis.set(user.email, token);
     res.status(200).send("User signed in");
   } catch (error) {
     res.status(400).send(error.message);

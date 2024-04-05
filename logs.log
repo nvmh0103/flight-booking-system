@@ -1225,3 +1225,249 @@
   level: 'info',
   timestamp: '2024-04-05T12:06:14.675Z'
 }
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:16:41.695Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:16:41.702Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:17:09.231Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:17:09.238Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:17:24.402Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:17:24.408Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:18:03.450Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:18:03.456Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:19:05.477Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:19:05.483Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:20:29.224Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:20:29.229Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:20:54.993Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:20:54.999Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:22:36.297Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:22:36.303Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:22:43.595Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:22:43.602Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:23:13.814Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:23:13.820Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:23:33.482Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:23:33.491Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:23:52.007Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-05T12:23:52.094Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:24:12.113Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:24:12.119Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:24:37.250Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:24:37.255Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:24:45.910Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-05T12:24:45.983Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:26:09.014Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:26:09.020Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:26:19.099Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-05T12:26:19.171Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712319979,
+  exp: 1712320879,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-05T12:26:22.209Z'
+}
+{
+  level: 'info',
+  message: 'Token in Redis: ',
+  timestamp: '2024-04-05T12:26:22.213Z'
+}
+{
+  message: 'Get user route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:26:22.214Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:26:52.138Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:26:52.144Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:27:26.589Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:27:26.594Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:27:31.009Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-05T12:27:31.089Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712320051,
+  exp: 1712320951,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-05T12:27:39.902Z'
+}
+{
+  level: 'info',
+  message: 'Token in Redis: ',
+  timestamp: '2024-04-05T12:27:39.908Z'
+}
+{
+  message: 'Get user route called',
+  level: 'info',
+  timestamp: '2024-04-05T12:27:39.909Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-05T12:28:04.101Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-05T12:28:04.107Z'
+}
