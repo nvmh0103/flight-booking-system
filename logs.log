@@ -1616,3 +1616,1523 @@
   level: 'info',
   timestamp: '2024-04-05T12:55:00.075Z'
 }
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:50:49.271Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:50:49.282Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:51:57.768Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:51:57.774Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:52:08.902Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:52:08.908Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:52:31.027Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:52:31.034Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:54:27.436Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:54:27.443Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:54:56.115Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:54:56.121Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:55:57.468Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:55:57.473Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:56:10.437Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:56:10.445Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:57:30.630Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:57:30.638Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T07:58:20.336Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T07:58:20.347Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T08:41:03.222Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T08:41:03.228Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T08:42:26.408Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T08:42:33.025Z'
+}
+{
+  message: {
+    username: 'hoang',
+    email: 'hoang1@gmail.com',
+    phoneNumber: '12345678',
+    citizenIdNumber: '12938293329'
+  },
+  level: 'info',
+  timestamp: '2024-04-06T08:42:33.027Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T08:42:35.698Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T08:42:35.776Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712392955,
+  exp: 1712393855,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T08:42:38.630Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T08:42:38.633Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T08:43:09.410Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T08:43:09.419Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712392955,
+  exp: 1712393855,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T08:43:52.163Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T08:43:52.193Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T08:43:52.197Z'
+}
+{
+  message: 'Failed to create ticket for user b84a2057-0614-4c23-ad77-17815dab9028: ReferenceError: sequelize is not defined',
+  level: 'error',
+  timestamp: '2024-04-06T08:43:52.199Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T08:44:01.641Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T08:44:01.647Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712392955,
+  exp: 1712393855,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T08:44:04.363Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T08:44:04.378Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T08:44:04.380Z'
+}
+{
+  message: 'Failed to create ticket for user b84a2057-0614-4c23-ad77-17815dab9028: TypeError: sequelize.transaction is not a function',
+  level: 'error',
+  timestamp: '2024-04-06T08:44:04.381Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T08:48:45.636Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T08:48:45.648Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:14:29.982Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:14:29.987Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:14:37.535Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:14:37.615Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712394877,
+  exp: 1712395777,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:14:39.902Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:14:39.906Z'
+}
+{
+  message: 'Failed to create ticket for user b84a2057-0614-4c23-ad77-17815dab9028: SequelizeValidationError: notNull Violation: Booking.userId cannot be null,\n' +
+    'notNull Violation: Booking.status cannot be null,\n' +
+    'notNull Violation: Booking.totalPrice cannot be null,\n' +
+    'notNull Violation: Booking.paymentId cannot be null',
+  level: 'error',
+  timestamp: '2024-04-06T09:14:39.913Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:15:43.387Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:15:43.393Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:17:25.416Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:17:25.421Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:17:35.060Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:17:35.068Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712394877,
+  exp: 1712395777,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:17:38.573Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:17:38.594Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:17:38.597Z'
+}
+{
+  level: 'info',
+  message: 'b84a2057-0614-4c23-ad77-17815dab9028',
+  timestamp: '2024-04-06T09:17:38.601Z'
+}
+{
+  message: 'Failed to create ticket for user b84a2057-0614-4c23-ad77-17815dab9028: SequelizeDatabaseError: column "payment_id" of relation "bookings" does not exist',
+  level: 'error',
+  timestamp: '2024-04-06T09:17:38.611Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:18:42.129Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:18:42.136Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712394877,
+  exp: 1712395777,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:19:27.838Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:19:27.862Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:19:27.864Z'
+}
+{
+  level: 'info',
+  message: 'b84a2057-0614-4c23-ad77-17815dab9028',
+  timestamp: '2024-04-06T09:19:27.867Z'
+}
+{
+  message: 'Failed to create ticket for user b84a2057-0614-4c23-ad77-17815dab9028: SequelizeDatabaseError: column "payment_id" of relation "bookings" does not exist',
+  level: 'error',
+  timestamp: '2024-04-06T09:19:27.875Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:21:19.790Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:21:19.796Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712394877,
+  exp: 1712395777,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:21:21.236Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:21:21.250Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:21:21.252Z'
+}
+{
+  message: 'Failed to create ticket for user b84a2057-0614-4c23-ad77-17815dab9028: SequelizeDatabaseError: column "payment_id" of relation "bookings" does not exist',
+  level: 'error',
+  timestamp: '2024-04-06T09:21:21.263Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:21:41.917Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:21:41.922Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712394877,
+  exp: 1712395777,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:21:44.536Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:21:44.554Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:21:44.559Z'
+}
+{
+  message: 'Failed to create ticket for user b84a2057-0614-4c23-ad77-17815dab9028: SequelizeDatabaseError: column "payment_id" of relation "bookings" does not exist',
+  level: 'error',
+  timestamp: '2024-04-06T09:21:44.573Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:22:30.943Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:22:30.949Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712394877,
+  exp: 1712395777,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:22:33.640Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:22:38.513Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:22:42.546Z'
+}
+{
+  message: {
+    username: 'hoang',
+    email: 'hoang1@gmail.com',
+    phoneNumber: '12345678',
+    citizenIdNumber: '12938293329'
+  },
+  level: 'info',
+  timestamp: '2024-04-06T09:22:42.547Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:22:44.316Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:22:44.388Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712395364,
+  exp: 1712396264,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:22:46.331Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:22:46.339Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:23:03.441Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:23:03.447Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712395364,
+  exp: 1712396264,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:23:24.206Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:23:24.230Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:23:24.232Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:23:45.328Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:23:45.334Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712395364,
+  exp: 1712396264,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:23:50.313Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:23:50.333Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:23:50.335Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:25:08.283Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:25:08.289Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712395364,
+  exp: 1712396264,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:25:11.130Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:25:11.152Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:25:11.156Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T09:26:41.795Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T09:26:41.800Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712395364,
+  exp: 1712396264,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T09:26:44.540Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T09:26:44.560Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T09:26:44.562Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:41:38.947Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:41:38.954Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:41:45.836Z'
+}
+{
+  message: {
+    username: 'hoang',
+    email: 'hoang1@gmail.com',
+    phoneNumber: '12345678',
+    citizenIdNumber: '12938293329'
+  },
+  level: 'info',
+  timestamp: '2024-04-06T13:41:45.837Z'
+}
+{
+  name: 'SequelizeUniqueConstraintError',
+  errors: [
+    ValidationErrorItem {
+      message: 'email must be unique',
+      type: 'unique violation',
+      path: 'email',
+      value: 'hoang1@gmail.com',
+      origin: 'DB',
+      instance: User {
+        dataValues: {
+          id: '6b0f8023-3440-410a-9af1-0c9b029185dc',
+          createdAt: 2024-04-06T13:41:45.894Z,
+          username: 'hoang',
+          email: 'hoang1@gmail.com',
+          password: '$2b$10$zKW0Yoj7XbWuoOyX149UE.Arrt9wRG.mPWYKlevJipwvlJRF1S0sq',
+          phoneNumber: '12345678',
+          citizenIdNumber: '12938293329'
+        },
+        _previousDataValues: {
+          username: undefined,
+          email: undefined,
+          password: undefined,
+          phoneNumber: undefined,
+          citizenIdNumber: undefined
+        },
+        uniqno: 1,
+        _changed: Set(5) {
+          'username',
+          'email',
+          'password',
+          'phoneNumber',
+          'citizenIdNumber'
+        },
+        _options: {
+          isNewRecord: true,
+          _schema: null,
+          _schemaDelimiter: '',
+          attributes: undefined,
+          include: undefined,
+          raw: undefined,
+          silent: undefined
+        },
+        isNewRecord: true
+      },
+      validatorKey: 'not_unique',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  parent: error: duplicate key value violates unique constraint "users_email_key"
+      at Parser.parseErrorMessage (C:\Users\hoang\OneDrive\Documents\GitHub\flight-booking-system\node_modules\pg-protocol\dist\parser.js:283:98)
+      at Parser.handlePacket (C:\Users\hoang\OneDrive\Documents\GitHub\flight-booking-system\node_modules\pg-protocol\dist\parser.js:122:29)
+      at Parser.parse (C:\Users\hoang\OneDrive\Documents\GitHub\flight-booking-system\node_modules\pg-protocol\dist\parser.js:35:38)
+      at Socket.<anonymous> (C:\Users\hoang\OneDrive\Documents\GitHub\flight-booking-system\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:376:12)
+      at readableAddChunk (node:internal/streams/readable:349:9)
+      at Readable.push (node:internal/streams/readable:286:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 208,
+    severity: 'ERROR',
+    code: '23505',
+    detail: 'Key (email)=(hoang1@gmail.com) already exists.',
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: 'public',
+    table: 'users',
+    column: undefined,
+    dataType: undefined,
+    constraint: 'users_email_key',
+    file: 'nbtinsert.c',
+    line: '663',
+    routine: '_bt_check_unique',
+    sql: 'INSERT INTO "users" ("id","username","password","email","phone_number","citizen_id_number","created_at") VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING "id","username","password","email","phone_number","citizen_id_number","created_at";',
+    parameters: [
+      '6b0f8023-3440-410a-9af1-0c9b029185dc',
+      'hoang',
+      '$2b$10$zKW0Yoj7XbWuoOyX149UE.Arrt9wRG.mPWYKlevJipwvlJRF1S0sq',
+      'hoang1@gmail.com',
+      '12345678',
+      '12938293329',
+      '2024-04-06 13:41:45.894 +00:00'
+    ]
+  },
+  original: error: duplicate key value violates unique constraint "users_email_key"
+      at Parser.parseErrorMessage (C:\Users\hoang\OneDrive\Documents\GitHub\flight-booking-system\node_modules\pg-protocol\dist\parser.js:283:98)
+      at Parser.handlePacket (C:\Users\hoang\OneDrive\Documents\GitHub\flight-booking-system\node_modules\pg-protocol\dist\parser.js:122:29)
+      at Parser.parse (C:\Users\hoang\OneDrive\Documents\GitHub\flight-booking-system\node_modules\pg-protocol\dist\parser.js:35:38)
+      at Socket.<anonymous> (C:\Users\hoang\OneDrive\Documents\GitHub\flight-booking-system\node_modules\pg-protocol\dist\index.js:11:42)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:376:12)
+      at readableAddChunk (node:internal/streams/readable:349:9)
+      at Readable.push (node:internal/streams/readable:286:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 208,
+    severity: 'ERROR',
+    code: '23505',
+    detail: 'Key (email)=(hoang1@gmail.com) already exists.',
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: 'public',
+    table: 'users',
+    column: undefined,
+    dataType: undefined,
+    constraint: 'users_email_key',
+    file: 'nbtinsert.c',
+    line: '663',
+    routine: '_bt_check_unique',
+    sql: 'INSERT INTO "users" ("id","username","password","email","phone_number","citizen_id_number","created_at") VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING "id","username","password","email","phone_number","citizen_id_number","created_at";',
+    parameters: [
+      '6b0f8023-3440-410a-9af1-0c9b029185dc',
+      'hoang',
+      '$2b$10$zKW0Yoj7XbWuoOyX149UE.Arrt9wRG.mPWYKlevJipwvlJRF1S0sq',
+      'hoang1@gmail.com',
+      '12345678',
+      '12938293329',
+      '2024-04-06 13:41:45.894 +00:00'
+    ]
+  },
+  fields: { email: 'hoang1@gmail.com' },
+  sql: 'INSERT INTO "users" ("id","username","password","email","phone_number","citizen_id_number","created_at") VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING "id","username","password","email","phone_number","citizen_id_number","created_at";',
+  level: 'error',
+  message: 'Failed to create user: Validation error',
+  stack: 'Error\n' +
+    '    at Query.run (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\dialects\\postgres\\query.js:50:25)\n' +
+    '    at C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\sequelize.js:315:28\n' +
+    '    at async PostgresQueryInterface.insert (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\dialects\\abstract\\query-interface.js:308:21)\n' +
+    '    at async model.save (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\model.js:2490:35)\n' +
+    '    at async User.create (C:\\Users\\hoang\\OneDrive\\Documents\\GitHub\\flight-booking-system\\node_modules\\sequelize\\lib\\model.js:1362:12)\n' +
+    '    at async UserRepository.createUser (file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/repository/userRepository.js:16:20)\n' +
+    '    at async UserService.register (file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/applications/userService.js:6:5)\n' +
+    '    at async file:///C:/Users/hoang/OneDrive/Documents/GitHub/flight-booking-system/src/controllers/v1.controller.js:18:5',
+  timestamp: '2024-04-06T13:41:45.948Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:41:48.584Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:41:48.658Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:41:53.290Z'
+}
+{
+  message: 'Get user route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:41:53.293Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:41:58.337Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:41:58.341Z'
+}
+{
+  message: 'Creating ticket for user 8cae6120-dd2d-453f-a456-591d503ee3f6',
+  level: 'info',
+  timestamp: '2024-04-06T13:41:58.394Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:42:55.016Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:42:55.021Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:42:58.362Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:42:58.376Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:42:58.378Z'
+}
+{
+  message: 'Creating ticket for user 8cae6120-dd2d-453f-a456-591d503ee3f6',
+  level: 'info',
+  timestamp: '2024-04-06T13:42:58.434Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:43:59.476Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:43:59.481Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:44:02.905Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:44:02.925Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:44:02.929Z'
+}
+{
+  level: 'info',
+  message: 'f39ebd1c-b23e-4c24-b5d7-cd6655283d08',
+  timestamp: '2024-04-06T13:44:02.983Z'
+}
+{
+  message: 'Creating ticket for user 8cae6120-dd2d-453f-a456-591d503ee3f6',
+  level: 'info',
+  timestamp: '2024-04-06T13:44:02.984Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:47:40.951Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:47:40.956Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:48:44.821Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:48:44.829Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:48:48.399Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:48:48.413Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:48:48.414Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:49:09.518Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:49:09.523Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:49:11.503Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:49:11.517Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:49:11.521Z'
+}
+{
+  level: 'info',
+  message: 'f39ebd1c-b23e-4c24-b5d7-cd6655283d08',
+  timestamp: '2024-04-06T13:49:11.573Z'
+}
+{
+  message: 'Creating ticket for user 8cae6120-dd2d-453f-a456-591d503ee3f6',
+  level: 'info',
+  timestamp: '2024-04-06T13:49:11.574Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:50:11.843Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:50:11.848Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:50:14.683Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:50:14.696Z'
+}
+{
+  message: 'Create booking route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:50:14.697Z'
+}
+{
+  level: 'info',
+  message: 'f39ebd1c-b23e-4c24-b5d7-cd6655283d08',
+  timestamp: '2024-04-06T13:50:14.758Z'
+}
+{
+  message: 'Creating ticket for user 8cae6120-dd2d-453f-a456-591d503ee3f6',
+  level: 'info',
+  timestamp: '2024-04-06T13:50:14.759Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:51:18.199Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:51:18.205Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:51:41.667Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:51:41.673Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:52:05.132Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:52:05.138Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:52:33.021Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:52:33.047Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:52:33.049Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:53:36.109Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:53:36.117Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:53:46.261Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:53:46.266Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:53:47.685Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:53:47.701Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:53:47.703Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:53:58.086Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:53:58.092Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:54:00.909Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:00.921Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:00.923Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:14.642Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:14.648Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:54:15.974Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:15.988Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:15.990Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:30.675Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:30.683Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:57.949Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:54:57.955Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:55:23.855Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:55:23.860Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:56:10.415Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:56:10.421Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:56:35.909Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:56:35.915Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712410908,
+  exp: 1712411808,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:56:39.625Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:56:39.639Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:56:39.641Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:04.256Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:04.261Z'
+}
+{
+  message: 'Sign in route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:09.528Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:09.599Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:57:11.734Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:11.743Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:31.466Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:31.472Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:57:32.958Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:32.972Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:57:32.973Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T13:58:10.489Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T13:58:10.495Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T13:58:12.656Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T13:58:12.671Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T13:58:12.673Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T14:00:07.504Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T14:00:07.510Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T14:00:09.988Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T14:00:10.002Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T14:00:10.004Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:05.347Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:05.358Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T14:01:06.326Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:06.338Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:06.340Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:18.665Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:18.671Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T14:01:20.814Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:20.826Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:20.828Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:48.558Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:48.563Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T14:01:51.506Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:51.526Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T14:01:51.528Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T14:02:12.295Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T14:02:12.301Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T14:02:13.977Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T14:02:13.992Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T14:02:13.995Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T14:03:03.639Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T14:03:03.645Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T14:03:06.003Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T14:03:06.016Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T14:03:06.018Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T14:04:51.030Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T14:04:51.036Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T14:04:53.567Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T14:04:53.581Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T14:04:53.582Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-06T14:05:02.024Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-06T14:05:02.030Z'
+}
+{
+  email: 'hoang1@gmail.com',
+  iat: 1712411829,
+  exp: 1712412729,
+  level: 'info',
+  message: 'Decoded token: ',
+  timestamp: '2024-04-06T14:05:04.513Z'
+}
+{
+  message: 'Redis connected',
+  level: 'info',
+  timestamp: '2024-04-06T14:05:04.525Z'
+}
+{
+  message: 'Get tickets route called',
+  level: 'info',
+  timestamp: '2024-04-06T14:05:04.528Z'
+}

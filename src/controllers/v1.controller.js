@@ -6,6 +6,8 @@ import flightService from "../applications/flightService.js";
 import authenticationMiddleware from "../middlewares/authentication.js";
 import cookie from "cookie";
 import redis from "../db/redis.js";
+import ticketService from "../applications/ticketService.js";
+import bookingService from "../applications/bookingService.js";
 
 const router = Router();
 
@@ -62,6 +64,26 @@ router.get("/user", authenticationMiddleware, async (req, res) => {
   } catch (error) {
     res.status(400).send(error.message);
   }
+});
+
+router.post("/bookings", authenticationMiddleware, async (req, res) => {
+  try {
+    logger.info("Create booking route called");
+    await bookingService.createBooking(req.body.tickets, req.user.id);
+    res.status(201).send("Booking created");
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+router.get("/tickets", authenticationMiddleware, async (req, res) => {
+  //try {
+  logger.info("Get tickets route called");
+  const tickets = await ticketService.getTicketsByUserId(req.user.id);
+  res.status(200).send({ tickets });
+  //} catch (error) {
+  // res.status(400).send(error.message);
+  //}
 });
 
 export default router;
