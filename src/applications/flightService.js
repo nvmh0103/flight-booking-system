@@ -75,13 +75,20 @@ class FlightService {
           model: Seat,
           attributes: ["id", "seatNumber", "seatType", "price"],
           required: true,
-          where: sequelize.where(
-            sequelize.literal(
-              `( SELECT COUNT(*) FROM "seats" WHERE "seats"."status" = 'available')`,
-            ),
-            Op.gte,
-            numberOfSeat,
-          ),
+          where: {
+            [Op.and]: [
+              {
+                status: "AVAILABLE",
+              },
+              sequelize.where(
+                sequelize.literal(
+                  `( SELECT COUNT(*) FROM "seats" WHERE "seats"."status" = 'AVAILABLE')`,
+                ),
+                Op.gte,
+                numberOfSeat,
+              ),
+            ],
+          },
         },
       ],
       where: {

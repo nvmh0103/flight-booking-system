@@ -77,13 +77,27 @@ router.post("/bookings", authenticationMiddleware, async (req, res) => {
 });
 
 router.get("/tickets", authenticationMiddleware, async (req, res) => {
-  //try {
-  logger.info("Get tickets route called");
-  const tickets = await ticketService.getTicketsByUserId(req.user.id);
-  res.status(200).send({ tickets });
-  //} catch (error) {
-  // res.status(400).send(error.message);
-  //}
+  try {
+    logger.info("Get tickets route called");
+    const tickets = await ticketService.getTicketsByUserId(req.user.id);
+    res.status(200).send({ tickets });
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
 });
+
+router.delete(
+  "/tickets/:ticketId",
+  authenticationMiddleware,
+  async (req, res) => {
+    try {
+      logger.info("Delete ticket route called");
+      await ticketService.deleteTicket(req.params.ticketId, req.user.id);
+      res.status(204).send("Ticket deleted");
+    } catch (error) {
+      res.status(400).send(error.message);
+    }
+  },
+);
 
 export default router;

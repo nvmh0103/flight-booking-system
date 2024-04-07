@@ -87,6 +87,7 @@ CREATE TABLE tickets (
     seat_id UUID NOT NULL,
     created_at timestamp DEFAULT CURRENT_TIMESTAMP,
     booking_id UUID NOT NULL,
+    status VARCHAR(10) NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users (id),
     FOREIGN KEY (flight_id) REFERENCES flights (id),
     FOREIGN KEY (seat_id) REFERENCES seats (id),

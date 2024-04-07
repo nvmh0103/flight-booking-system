@@ -35,6 +35,10 @@ const Ticket = sequelize.define(
       allowNull: false,
       field: "booking_id",
     },
+    status: {
+      type: DataTypes.STRING,
+      defaultValue: "BOOKED",
+    },
   },
   {
     tableName: "tickets",

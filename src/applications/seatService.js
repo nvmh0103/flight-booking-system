@@ -4,9 +4,9 @@ class SeatService {
   constructor() {}
 
   // Method to update the status of a seat
-  async updateSeatStatus(seatId, newStatus, flightId, transaction) {
+  async updateSeatStatus(seatId, oldStatus, newStatus, flightId, transaction) {
     const seat = await Seat.findOne({
-      where: { id: seatId },
+      where: { id: seatId, status: oldStatus },
       include: [
         {
           model: Flight,
@@ -17,7 +17,8 @@ class SeatService {
         },
       ],
     });
-    if (!seat || seat.status === "BOOKED") {
+
+    if (!seat) {
       throw new Error("Seat not found");
     }
 

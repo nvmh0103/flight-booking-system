@@ -1,6 +1,8 @@
 import logger from "../logger/winston.js";
 import { Ticket, Airport, Flight, Route, Seat } from "../models/index.js";
 import seatService from "./seatService.js";
+import sequelize from "../db/dbInstance.js";
+
 class TicketService {
   async createTicket(flightId, userId, seatId, bookingId, transaction) {
     // Add your code here to create a ticket
@@ -9,6 +11,7 @@ class TicketService {
     logger.info(`Creating ticket for user ${userId}`);
     const seat = await seatService.updateSeatStatus(
       seatId,
+      "AVAILABLE",
       "BOOKED",
       flightId,
       transaction,
@@ -60,6 +63,37 @@ class TicketService {
         },
       ],
     });
+  }
+
+  async deleteTicket(ticketId, userId) {
+    // Add your code here to delete a ticket
+    const ticket = await Ticket.findOne({
+      where: { id: ticketId, userId },
+      include: [
+        {
+          model: Seat,
+          attributes: ["id", "status"],
+        },
+      ],
+    });
+    if (!ticket) {
+      throw new Error("Ticket not found");
+    }
+    const transaction = await sequelize.getConnection().transaction();
+    try {
+      await seatService.updateSeatStatus(
+        ticket.Seat.id,
+        "BOOKED",
+        "AVAILABLE",
+        ticket.flightId,
+        transaction,
+      );
+      await ticket.destroy({ transaction });
+      await transaction.commit();
+    } catch (error) {
+      await transaction.rollback();
+      throw new Error("Failed to delete ticket");
+    }
   }
 }
 
