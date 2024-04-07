@@ -3136,3 +3136,28 @@
   level: 'info',
   timestamp: '2024-04-06T14:05:04.528Z'
 }
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-07T03:23:56.645Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-07T03:23:56.651Z'
+}
+{
+  message: 'Connection has been established successfully.',
+  level: 'info',
+  timestamp: '2024-04-07T03:26:21.469Z'
+}
+{
+  message: 'Server is running on port 8080',
+  level: 'info',
+  timestamp: '2024-04-07T03:26:21.474Z'
+}
+{
+  message: 'Get flight by id route called',
+  level: 'info',
+  timestamp: '2024-04-07T03:26:39.594Z'
+}

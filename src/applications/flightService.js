@@ -101,6 +101,43 @@ class FlightService {
 
     return flights;
   }
+
+  async getFlightsByFlightNumber(flightNumber) {
+    // Implement the method here
+    const flights = await Flight.findAll({
+      attributes: [
+        "departureTime",
+        "airplaneNumber",
+        "gateNumber",
+        "connectingIndex",
+        "flightNumber",
+      ],
+      include: [
+        {
+          model: Route,
+          attributes: ["id", "distance", "estimatedTimeOfArrival"],
+          required: true,
+          include: [
+            {
+              model: Airport,
+              attributes: ["name", "city", "country"],
+              as: "DepartureAirport",
+            },
+            {
+              model: Airport,
+              attributes: ["name", "city", "country"],
+              as: "ArrivalAirport",
+            },
+          ],
+        },
+      ],
+      where: {
+        flightNumber,
+      },
+    });
+
+    return flights;
+  }
 }
 
 export default new FlightService();

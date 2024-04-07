@@ -100,4 +100,16 @@ router.delete(
   },
 );
 
+router.get("/flights/:flightNumber", async (req, res) => {
+  try {
+    logger.info("Get flight by id route called");
+    const flight = await flightService.getFlightsByFlightNumber(
+      req.params.flightNumber,
+    );
+    res.status(200).send({ flight });
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
 export default router;
