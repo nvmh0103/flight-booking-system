@@ -45,6 +45,11 @@ const Flight = sequelize.define(
       allowNull: false,
       field: "airplane_number",
     },
+    flightNumber: {
+      type: DataTypes.STRING(50),
+      allowNull: false,
+      field: "flight_number",
+    },
     createdAt: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,

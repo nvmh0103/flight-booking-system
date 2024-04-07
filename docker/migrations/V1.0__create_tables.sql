@@ -49,6 +49,7 @@ CREATE TABLE flights (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     connecting_flight_id UUID NOT NULL,
     connecting_index INTEGER NOT NULL,
+    flight_number VARCHAR(50) NOT NULL,
     route_id UUID NOT NULL,
     gate_number VARCHAR(10) NOT NULL,
     baggage_allowance INTEGER NOT NULL,

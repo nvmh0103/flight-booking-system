@@ -22,6 +22,7 @@ class FlightService {
         "airplaneNumber",
         "gateNumber",
         "connectingIndex",
+        "flightNumber",
       ],
       include: [
         {
