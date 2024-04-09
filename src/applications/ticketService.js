@@ -30,7 +30,7 @@ class TicketService {
   async getTicketsByUserId(userId) {
     // Add your code here to get tickets by userId
     return await Ticket.findAll({
-      attributes: ["id"],
+      attributes: ["id", "status"],
       where: { userId },
       include: [
         {
@@ -88,7 +88,7 @@ class TicketService {
         ticket.flightId,
         transaction,
       );
-      await ticket.destroy({ transaction });
+      await ticket.update({ status: "CANCELLED" }, { transaction });
       await transaction.commit();
     } catch (error) {
       await transaction.rollback();

@@ -39,6 +39,7 @@ class BookingService {
     } catch (error) {
       logger.error(`Failed to create ticket for user ${userId}: ${error}`);
       await t.rollback();
+      throw error;
     }
   }
 }
